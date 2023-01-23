@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    color: white;
+}
+
+.container {
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container p {
+    position: relative;
+    display: flex;
+}
+
+.container p > span {
+    display: inline-block;
+    position: relative;
+}
+
+
+.container p > span::after {
+    position: relative;
+    color: blueviolet;
+    font-weight: 500;
+    content: '';
+    animation: animated 2s linear infinite alternate;
+    width: fit-content;
+    white-space: nowrap;
+    margin-left: 0.5rem;
+}
+
+@keyframes animated {
+    0% {
+        content: 'HTML';
+    }
+
+    15% {
+        content: 'CSS';
+    }
+
+    30% {
+        content: 'JavaScript';
+    }
+
+    45% {
+        content: 'Node.JS';
+    }
+
+    60% {
+        content: 'React';
+    }
+
+    75% {
+        content: 'React Native';
+    }
+
+    100% {
+        content: 'E muito mais...';
+    }
+}

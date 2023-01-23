@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container ul {
+    height: 25vh;
+    width: 50vh;
+    margin: auto;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.container ul li {
+    background-color: white;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.container ul li a img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container ul li:hover {
+    transform: scale(1.1);
+}
